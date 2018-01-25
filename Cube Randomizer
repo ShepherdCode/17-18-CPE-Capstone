@@ -1,0 +1,31 @@
+int randMotor;
+int randDirection;
+int buttonState = 0;
+
+
+void setup(){
+  pinMode(button, INPUT);
+  randomSeed(analogRead(0));
+}
+
+void loop() {
+  buttonState = digitalRead(button);
+  if(buttonState == HIGH){
+  randMotor = random(1, 7);
+  {
+    randDirection = (1,3);
+    {
+      if(randDirection == 1)
+      {
+      //randMotor chosen will turn clockwise 90 degrees
+       delay(200);
+      }
+      if(randDirection == 2 )
+      {
+      //randMotor chosen will turn counter clockwise 90 degrees
+       delay(200);
+      }
+    }
+  }
+ }
+}
